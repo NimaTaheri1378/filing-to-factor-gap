@@ -1,0 +1,42 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv*/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+site/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Private / reproducible-but-not-public artifacts
+data/
+artifacts/private/
+artifacts/logs/
+artifacts/manifests/private/
+artifacts/remote/
+outputs/private/
+logs/
+
+# Local Codex handoff notes are intentionally not public release material.
+.codex/
+
+# Vendor data must never be committed.
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.sas7bdat
+*.csv.gz
+*.zip
+
+# Allow tiny public fixture CSVs and generated public result tables.
+!tests/fixtures/**/*.csv
+!artifacts/tables/public/**/*.csv

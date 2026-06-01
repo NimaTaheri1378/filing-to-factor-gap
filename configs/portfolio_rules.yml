@@ -1,0 +1,14 @@
+monthly_sleeve:
+  rebalance: "M"
+  long_quantile: 0.9
+  short_quantile: 0.1
+  sector_neutral: true
+  max_name_weight: 0.02
+  max_adv_pct: 0.02
+  turnover_buffer_bps: 25
+  one_way_cost_bps: 10
+event_sleeve:
+  holding_days: [5, 20, 60]
+  long_quantile: 0.8
+  short_quantile: 0.2
+  one_way_cost_bps: 10

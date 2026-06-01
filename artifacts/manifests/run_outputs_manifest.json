@@ -1,0 +1,38 @@
+{
+  "created_at_utc": "2026-06-01T01:04:09.723819+00:00",
+  "figures": {
+    "coverage_by_year": "artifacts/figures/public/coverage_by_year.png",
+    "coverage_heatmap": "artifacts/figures/public/coverage_heatmap.png",
+    "event_returns": "artifacts/figures/public/event_returns.png",
+    "gap_complexity_scatter": "artifacts/figures/public/gap_complexity_scatter.png",
+    "gap_decile_bar": "artifacts/figures/public/gap_decile_bar.png",
+    "gap_distribution": "artifacts/figures/public/gap_distribution.png",
+    "long_short_returns": "artifacts/figures/public/long_short_returns.png",
+    "robustness_rank_ic": "artifacts/figures/public/robustness_rank_ic.png",
+    "rolling_net_return": "artifacts/figures/public/rolling_net_return.png"
+  },
+  "kind": "run_outputs",
+  "models": [
+    "fm",
+    "elastic_net",
+    "lightgbm",
+    "deep"
+  ],
+  "synthetic": false,
+  "tables": {
+    "backtest_summary": "artifacts/tables/public/monthly_backtest_summary.csv",
+    "coverage": "artifacts/tables/public/coverage_by_year.csv",
+    "dataset_table": "artifacts/tables/public/dataset_table.csv",
+    "event_study": "artifacts/tables/public/event_study.csv",
+    "factor_alpha": "artifacts/tables/public/factor_alpha.csv",
+    "feature_summary": "artifacts/tables/public/feature_summary.csv",
+    "gap_complexity_sorts": "artifacts/tables/public/gap_complexity_sorts.csv",
+    "gap_deciles": "artifacts/tables/public/gap_decile_returns.csv",
+    "missingness": "artifacts/tables/public/feature_missingness.csv",
+    "model_scorecard": "artifacts/tables/public/model_scorecard.csv",
+    "monthly_backtest": "artifacts/tables/public/monthly_backtest.csv",
+    "rank_ic": "artifacts/tables/public/rank_ic.csv",
+    "robustness": "artifacts/tables/public/robustness_summary.csv",
+    "rolling_backtest": "artifacts/tables/public/rolling_backtest.csv"
+  }
+}

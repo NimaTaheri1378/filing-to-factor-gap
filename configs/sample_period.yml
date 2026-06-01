@@ -1,0 +1,33 @@
+sample:
+  warmup_start: "2009-01-01"
+  start: "2010-01-01"
+  end: "2025-12-31"
+  holdout_start: "2026-01-01"
+  holdout_end: "2026-05-31"
+  train_end: "2017-12-31"
+  validation_start: "2018-01-01"
+  validation_end: "2019-12-31"
+  test_start: "2020-01-01"
+  test_end: "2025-12-31"
+universe:
+  share_codes: [10, 11]
+  exchange_codes: [1, 2, 3]
+  min_price: 5.0
+  min_market_equity: 100000000
+  min_dollar_volume: 1000000
+filings:
+  forms: ["10-K", "10-Q"]
+  amendment_forms: ["10-K/A", "10-Q/A"]
+  market_open: "09:30:00"
+  market_close: "16:00:00"
+  timezone: "America/New_York"
+features:
+  industry_neutralizer: "sic2"
+  winsorize_pcts: [0.01, 0.99]
+  min_month_obs: 50
+outputs:
+  data_root: "data"
+  artifact_root: "artifacts"
+  public_table_dir: "artifacts/tables/public"
+  public_figure_dir: "artifacts/figures/public"
+  manifest_dir: "artifacts/manifests"

@@ -1,0 +1,29 @@
+wrds_libraries:
+  as_filed:
+    libraries: ["contrib_as_filed_financials", "wrdsapps", "sec"]
+    table_patterns: ["%as%file%", "%xbrl%", "%filing%", "%fact%"]
+  compustat:
+    libraries: ["comp_na_daily_all", "comp", "compm"]
+    table_patterns: ["funda", "fundq", "company", "secd"]
+  crsp:
+    libraries: ["crsp_a_stock", "crsp", "crspa"]
+    table_patterns: ["msf", "dsf", "msenames", "dsenames", "stocknames"]
+  ccm:
+    libraries: ["crsp_a_ccm", "crsp", "ccm"]
+    table_patterns: ["ccmxpf_linktable", "ccmxpf_lnkhist", "%link%"]
+  ff:
+    libraries: ["ff_all", "ff"]
+    table_patterns: ["%factors%", "%daily%", "%monthly%"]
+  ibes:
+    libraries: ["tr_ibes", "ibes"]
+    table_patterns: ["statsum%", "detu%", "actu%"]
+  liquidity:
+    libraries: ["contrib_liquidity_taq", "taq", "taqmsec"]
+    table_patterns: ["%liquidity%", "%spread%", "%quote%"]
+
+required_columns:
+  crsp_monthly: ["permno", "date", "ret", "prc", "shrout"]
+  crsp_daily: ["permno", "date", "ret", "prc", "vol"]
+  compustat_annual: ["gvkey", "datadate", "fyear", "at", "sale", "cogs", "ni", "oancf", "ceq"]
+  ccm_link: ["gvkey", "lpermno", "linkdt", "linkenddt"]
+  sec_submission: ["cik", "accession", "form", "acceptance_datetime"]

@@ -1,0 +1,10 @@
+site_name: Filing-to-Factor Gap
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Methodology: methodology.md
+  - Data Access: data_access.md
+  - Results: results.md
+  - Figures: figures.md
+  - Reproducibility: reproducibility.md

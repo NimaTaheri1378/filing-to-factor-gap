@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Filing-to-Factor Gap"
+authors:
+  - family-names: Taheri
+    given-names: Nima
+year: 2026
+license: MIT
+repository-code: "https://github.com/NimaTaheri1378/Filing-to-Factor-Gap"

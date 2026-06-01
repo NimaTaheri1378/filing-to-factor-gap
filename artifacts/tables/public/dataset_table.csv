@@ -1,0 +1,7 @@
+layer,source,public
+as_filed_fundamentals,WRDS contrib_as_filed_financials + SEC companyfacts fallback,False
+filing_metadata,SEC submissions API,True
+standardized_fundamentals,WRDS Compustat,False
+returns_and_linking,WRDS CRSP + CCM,False
+factors,WRDS ff_all / French factors,True
+attention_controls,WRDS IBES when entitled,False
