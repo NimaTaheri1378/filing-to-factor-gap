@@ -32,7 +32,7 @@ CONCEPT_MAP = {
 
 
 def user_agent() -> str:
-    return os.getenv("FTFG_SEC_USER_AGENT", "Filing-to-Factor-Gap research contact@example.com")
+    return os.getenv("FTFG_SEC_USER_AGENT", "filing-to-factor-gap research contact@example.com")
 
 
 def sec_get_json(url: str, sleep: float = 0.12) -> dict[str, Any]:

@@ -25,6 +25,9 @@ def fit_deep_model_optional(
         return out
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    torch.manual_seed(1378)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(1378)
     LOG.info("Fitting deep model on device=%s", device)
     x_train = train[features].fillna(train[features].median()).to_numpy(dtype=np.float32)
     y_train = train[target].fillna(0).to_numpy(dtype=np.float32).reshape(-1, 1)

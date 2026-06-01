@@ -14,7 +14,7 @@ export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 export OPENBLAS_NUM_THREADS=1
 export PYTHONPATH="$PWD/src:${PYTHONPATH:-}"
-export FTFG_SEC_USER_AGENT="${FTFG_SEC_USER_AGENT:-Filing-to-Factor-Gap research contact@example.com}"
+export FTFG_SEC_USER_AGENT="${FTFG_SEC_USER_AGENT:-filing-to-factor-gap research contact@example.com}"
 "$HOME/.conda/envs/ml_core/bin/python" -m ftfg.cli pull-wrds --force
 "$HOME/.conda/envs/ml_core/bin/python" -m ftfg.cli pull-sec
 "$HOME/.conda/envs/ml_core/bin/python" -m ftfg.cli build-real-panel

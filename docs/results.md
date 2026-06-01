@@ -20,7 +20,7 @@ The final private run builds a point-in-time panel from WRDS, SEC EDGAR/XBRL, CR
 |---|---:|---:|---:|---:|---:|
 | Elastic Net | 109,662 | 0.0771 | 0.0150 | -0.0027 | 0.5295 |
 | LightGBM | 109,662 | 0.1130 | 0.1475 | 0.0195 | 0.5339 |
-| Deep model | 109,662 | 0.0088 | 0.0038 | -3.3179 | 0.5016 |
+| Deep model | 109,662 | -0.0196 | -0.0024 | -5.5075 | 0.4938 |
 
 LightGBM was fit in CPU mode after the cluster build reported that GPU tree learning was unavailable. The optional deep model ran on CUDA.
 

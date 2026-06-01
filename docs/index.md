@@ -1,4 +1,4 @@
-# Filing-to-Factor Gap
+# filing-to-factor gap
 
 This project studies whether as-filed fundamentals and filing-complexity frictions predict the cross-section of U.S. equity returns after filings become public.
 

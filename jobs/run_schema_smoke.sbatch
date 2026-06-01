@@ -14,7 +14,7 @@ export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 export OPENBLAS_NUM_THREADS=1
 export PYTHONPATH="$PWD/src:${PYTHONPATH:-}"
-export FTFG_SEC_USER_AGENT="${FTFG_SEC_USER_AGENT:-Filing-to-Factor-Gap research contact@example.com}"
+export FTFG_SEC_USER_AGENT="${FTFG_SEC_USER_AGENT:-filing-to-factor-gap research contact@example.com}"
 "$HOME/.conda/envs/ml_core/bin/python" -m ftfg.cli wrds-smoke --out-dir artifacts/private/wrds_smoke
 "$HOME/.conda/envs/ml_core/bin/python" -m ftfg.cli schema-audit --schema-config configs/schema_targets.yml
 "$HOME/.conda/envs/ml_core/bin/python" -m ftfg.cli pull-wrds --smoke-year 2021 --no-daily
